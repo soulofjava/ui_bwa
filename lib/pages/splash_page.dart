@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
@@ -17,7 +18,22 @@ class _SplashPageState extends State<SplashPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              child: Image.asset('assets/logo.png'),
+              child: Image.asset(
+                'assets/logo.png',
+                height: 76,
+                width: 59,
+              ),
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Text(
+              'FUTURE JOB',
+              style: GoogleFonts.poppins(
+                color: Color(0xffFFFFFF),
+                fontSize: 32,
+                fontWeight: FontWeight.w600,
+              ),
             ),
           ],
         ),
