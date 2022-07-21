@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:ui_bwa/pages/home_pages.dart';
 import 'package:ui_bwa/pages/signin_page.dart';
 import 'package:ui_bwa/theme.dart';
 
@@ -222,7 +223,12 @@ class _SignUpPageState extends State<SignUpPage> {
                             borderRadius: BorderRadius.circular(66),
                           ),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => HomePage()),
+                          );
+                        },
                         child: Text(
                           'Sign Up',
                           style: buttonTextStyle,
